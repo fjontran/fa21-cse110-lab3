@@ -11,7 +11,7 @@ body {
 /*header styles */
 h1 {
     color: rgb(238, 231, 245);
-    background-image: url(/images/img1.jpg);
+    background-image: url(/fa21-cse110-lab3/images/img1.jpg );
     
     
 }
@@ -24,7 +24,7 @@ h3 {
 
 h4 {
     color: rgb(238, 231, 245);
-    background-image: url(/images/img1.jpg);
+    background-image: url(/fa21-cse110-lab3/images/img1.jpg );
     border: 2px solid rgb(17, 6, 39);
     display:block;
     padding-top: 2 em;
