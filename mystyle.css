@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(207, 173, 230);
+  }
+  
+  h1 {
+    color: rgb(238, 231, 245);
+    background-image: url(/images/img1.jpg);
+  }
+  h3 {
+      color:rgb(238, 231, 245);
+      background-color: rgba(255,255,255,.1);
+  }
+  h4 {
+      color:rgb(25, 4, 46);
+  }
+
+  .block,
+  li {
+    border: 2px solid blue;
+    padding: .5em;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  .block {
+    display: block;
+  } 
