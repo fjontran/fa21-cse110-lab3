@@ -1,37 +1,109 @@
+/* font type */
+* {
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+}
+
+/*body style*/
 body {
     background-color: rgb(207, 173, 230);
-  }
-  
+}
+
+/*header styles */
 h1 {
     color: rgb(238, 231, 245);
     background-image: url(/images/img1.jpg);
-  }
+    
+    
+}
 
 h3 {
-      color:rgb(238, 231, 245);
-      background-color: rgba(255,255,255,.1);
-  }
+    color:rgb(238, 231, 245);
+    background-color: rgba(255,255,255,.1);
+    position:static;
+}
 
 h4 {
     color: rgb(238, 231, 245);
     background-image: url(/images/img1.jpg);
     border: 2px solid rgb(17, 6, 39);
-    padding: 2 em;
+    display:block;
+    padding-top: 2 em;
+    padding-bottom: 1 em;
+    padding-left: .5 em;
+    padding-right: .5 em;
     width:max-content;
-  }
+}
 
+/* general text style */
+p {
+    text-decoration:rgb(207, 173, 230);
+    display:inline;
+    padding: .1 em;
+}
+
+/* list styles */
 li {
     border: 2px solid rgb(236, 233, 220);
     color:rgb(17, 6, 39);
     background-color: rgba(238, 231, 245,.2);
     padding: .5em;
+    display:inline;
+    margin: 1em;
+    padding-bottom: .1em;
+    list-style-type: disc;
+}
+
+li li {
+    list-style-type: circle;
+}
+
+li:hover{
+    border: 2px solid rgb(236, 233, 220);
+    color:rgb(17, 6, 39);
+    background-color: rgb(236, 233, 220);
+    padding: .5em;
+    display:inline;
     margin-right: 1em;
-  }
+}
 
 ul{
     background-color: rgba(238, 231, 245,.2);
-    display: flex;
     list-style: none;
     padding: 1.5em;
     width:max-content;
+    margin:auto;
+}
+
+ul > li {
+    color:rgb(255,255,255);
+}
+@media (max-width: 35rem){
+    p{
+        background-color: rgba(12, 3, 22, 0.2);
+        color: rgb(236, 233, 220);
+    }
+}
+
+/* extra styles */
+#special {
+    background-color: wheat;
+}
+p[attribute="BN"] {
+    color: rgb(140, 36, 209);
+}
+.my-list,
+.agenda{
+    display:block;
+}
+
+h4 + form {
+    font-weight: bold;
+}
+
+.forms ~ footer {
+    font-weight:bolder;
+    color:rgb(204, 147, 40)
+}
+h4.forms{
+    color:black;
 }

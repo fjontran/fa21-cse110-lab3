@@ -5,6 +5,30 @@
         <title>BBC First Meeting Minutes</title>
         <link rel="stylesheet" href="mystyle.css">
     </head>
+    <style>
+        header{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 10px;
+        }
+        header:active{
+            display:none;
+        }
+        details:hover{
+            color: rgb(238, 231, 245);
+            background-image: url(/images/img1.jpg);
+        }
+        span{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .forms{
+            border: 2px solid azure;
+            display:inline-grid;
+
+        }
+    </style>
     <body>
         <header class="page-header">
             <h1>Beidou's Bad Coders First Meeting</h1>
@@ -42,12 +66,12 @@
 
         <div class="new_business">
             <h4>New Business:</h4>
-            <p>
+            <p attribute="BN">
                 As a fun group activity, we all decided that we should meet up for lunch some time to discuss how indepth our knowledge on coding and software development was- also it's just nice to hang out!
             </p>
         </div>
 
-        <div class="extras">
+        <div class="extras" id="special">
             <details>
                 <summary>Comments/Questions/Etc:</summary>
                 <ul>
@@ -68,16 +92,12 @@
                 alt="Diagram 1"
                 height="300"
             >
-            </span>
-            <span>
-                <img
+            <img
                 src="https://www.gliffy.com/sites/gliffy/files/image/2020-07/image-software-engineering-aws-architechture_1.jpg"
                 alt="Diagram 2"
                 height="300"
             >
-            </span>
-            <span>
-                <img
+            <img
                 src="https://cdn-media-1.freecodecamp.org/images/-6Qm9owYwAYEHCUXT67dk0t6-vvKZOCw1KiL"
                 alt="Diagram 3"
                 height="300"
@@ -86,28 +106,19 @@
         </div>
 
         <div class="video-audio">
-            <div>
                 <h4>Video recording:</h4>
-                <div>
                     <video controls height="300">
                         <source src="/Lab2/video-and-audio/video0.mov"
                                 type="video/mp4">
     
                     </video>
-                </div>
-            </div>
-            <div>
                 <h4>Audio recording:</h4>
-                <div>
                     <audio
                     controls src="/Lab2/video-and-audio/audio.mp3">
-
                     </audio>
-                </div>
-            </div>
         </div>
 
-        <div class="forms">
+        <div class="forms" style="margin-top:2em;">
             <div>
                 <h4>Forms:</h4>
                 <form method="get"
@@ -120,14 +131,14 @@
                     <label for="email">Enter your email:</label>
                     <input type="email" name="email" id="email" required>
                 </div>
-                <div class="form-example">
+                <div class="form-example" style="margin-bottom:2em;">
                     <input type="submit" value="Submit!">
                 </div>
                 </form>
             </div>
 
             <div>
-                <fieldset>
+                <fieldset style="margin-bottom:2em;">
                     <legend>Choose favorite element</legend>
                     <input type="radio" id="anemo" name="element">
                     <label for="anemo">Anemo</label><br/>
@@ -144,8 +155,8 @@
             </div>
 
             <div>
-                <label for="reason">Tell us your reason why:</label>
-                <textarea id="reason" name="reason" rows="5" cols="33">
+                <label for="reason">Tell us your reason why:</label><br>
+                <textarea id="reason" name="reason" rows="5" cols="33" >
 
                 </textarea>
             </div>
