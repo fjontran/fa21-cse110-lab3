@@ -2,28 +2,36 @@ body {
     background-color: rgb(207, 173, 230);
   }
   
-  h1 {
+h1 {
     color: rgb(238, 231, 245);
     background-image: url(/images/img1.jpg);
   }
-  h3 {
+
+h3 {
       color:rgb(238, 231, 245);
       background-color: rgba(255,255,255,.1);
   }
-  h4 {
-      color:rgb(25, 4, 46);
+
+h4 {
+    color: rgb(238, 231, 245);
+    background-image: url(/images/img1.jpg);
+    border: 2px solid rgb(17, 6, 39);
+    padding: 2 em;
+    width:max-content;
   }
 
-  .block,
-  li {
-    border: 2px solid blue;
+li {
+    border: 2px solid rgb(236, 233, 220);
+    color:rgb(17, 6, 39);
+    background-color: rgba(238, 231, 245,.2);
     padding: .5em;
-  }
-  
-  ul {
-    list-style: none;
+    margin-right: 1em;
   }
 
-  .block {
-    display: block;
-  } 
+ul{
+    background-color: rgba(238, 231, 245,.2);
+    display: flex;
+    list-style: none;
+    padding: 1.5em;
+    width:max-content;
+}
